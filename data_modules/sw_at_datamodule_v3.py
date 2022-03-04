@@ -11,7 +11,7 @@ import torch as T
 import pytorch_lightning as pl
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader, random_split
-from data.SeqSlowWaveDataset.SeqSlowWaveDataset_v3 import SeqSlowWaveDataset_v3
+from data_modules.SeqSlowWaveDataset_v3 import SeqSlowWaveDataset_v3
 
 class SlowWaveATData_v3 (pl.LightningDataModule):
     def __init__ (self, data_dir:str, batch_size=16):
